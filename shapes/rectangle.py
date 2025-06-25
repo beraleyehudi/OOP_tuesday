@@ -8,3 +8,6 @@ class Rectangle(Shape):
 
     def get_area(self):
         return self.length * self.width
+
+    def get_perimeter(self):
+        return (self.length + self.width) * 2

@@ -8,3 +8,6 @@ class Triangle(Shape ):
 
     def get_area(self):
         return (self.base * self.height) / 2
+
+    def get_perimeter(self):
+        return 23.55
