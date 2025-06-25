@@ -1,4 +1,10 @@
+from shapes.shape_type import ShapeType
+
+
 class Shape:
+    def __init__(self):
+        self.type = None
+
     def get_area(self):
         pass
 
@@ -7,8 +13,12 @@ class Shape:
 
     def __str__(self):
         try:
-            print(f"the area is {self.get_area()}")
-            print(f"the perimeter is {self.get_perimeter()}")
-
+            return  f"""
+                    i am a {self.type.value} \n
+                    my area is {self.get_area()} \n
+                    my perimeter is {self.get_perimeter()}
+                    """
         except:
-            print("please enter correct values")
+            return "please enter correct values"
+
+
