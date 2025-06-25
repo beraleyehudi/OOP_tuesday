@@ -16,3 +16,6 @@ class Circle(Shape):
     def get_perimeter(self):
         return 5
 
+    def __add__(self, other):
+        return Circle(self.radius + other.radius)
+

@@ -14,3 +14,6 @@ class Triangle(Shape):
 
     def get_perimeter(self):
         return 23.55
+
+    def __add__(self, other):
+        return Triangle(self.base + other.base, self.height + other.height)

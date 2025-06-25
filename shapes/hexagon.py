@@ -16,3 +16,7 @@ class Hexagon(Shape):
 
     def get_perimeter(self):
         return self.side * 6
+
+    def __add__(self, other):
+        return Hexagon(self.side + other.side)
+

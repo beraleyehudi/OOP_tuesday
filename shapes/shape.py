@@ -22,3 +22,6 @@ class Shape:
             return "please enter correct values"
 
 
+    def __add__(self, other):
+        pass
+
